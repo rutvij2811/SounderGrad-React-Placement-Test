@@ -3,11 +3,32 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+const SLIDES = [
+  {
+      title: "Today's workout plan",
+      text: "We're gonna do 3 fundamental exercises."
+  },
+  {
+      title: "Excercise 1",
+      text: "Instruction of ex 1."
+  },
+  {
+      title: "Excercise 2",
+      text: "Instruction of ex 2."
+  },
+  {
+      title: "Excercise 3",
+      text: "Instruction of ex 3."
+  },
+  {
+      title: "Excercise Complete",
+      text: "Job well done!"
+  }
+];
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App slides={SLIDES}/>
   </React.StrictMode>
 );
 

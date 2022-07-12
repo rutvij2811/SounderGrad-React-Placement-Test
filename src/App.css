@@ -1,38 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.text-center{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  max-height: 50px;
+  color: green;
+  text-align: center;
+  width: 100vw;
+  background-color: rgb(38, 38, 38);
+}
+#navigation{
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#slide {
+  border: 2px solid #eee;
+  padding: 1rem;
+  min-height: 300px;
+  box-shadow: 5px 5px 10px grey;
+  margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#slide h1, p {
+  margin-top: 25px;
+  font-weight: bold;
+}
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+  /* border: 10px solid gray; */
+}
+.small  {
+  margin: 0px 10px;
+  cursor: pointer;
+  min-width: 80px;
+  background-color: green;
   color: white;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outlined {
+  background-color: rgb(173, 222, 173);
+  border:1px solid green;
+  color: gray;
 }
